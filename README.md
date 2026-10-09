@@ -13,18 +13,17 @@ A responsive café website concept for Cozy & Co. in Sangareddy, Telangana.
 ## Preview locally
 Open `index.html` directly in a browser, or from this folder run:
 
-```powershell
+```bash
 python -m http.server 8000
 ```
 
 Then visit http://localhost:8000.
 
 ## Publish with GitHub Pages
-1. Open the repository **Settings**.
-2. Choose **Pages** from the left menu.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch `main` and folder `/ (root)`, then Save.
-5. Wait a minute or two and open the published URL shown in Pages settings.
+1. Open the repository **Settings → Pages**.
+2. Under **Build and deployment**, choose **GitHub Actions** as the source.
+3. The workflow in `.github/workflows/deploy-pages.yml` publishes the site when changes are pushed to `main`.
+4. Check the **Actions** tab for deployment status.
 
 ## Before taking real orders
 This is a front-end demo. The cart works in the browser, but checkout does not submit orders and no payment gateway, order database, admin authentication, or email inbox is connected. Connect a secure backend/payment provider before accepting real payments. The café's exact address, phone number, opening hours, and genuine reviews should be added only after confirmation. Menu prices are illustrative and should be verified.
