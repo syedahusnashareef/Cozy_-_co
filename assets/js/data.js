@@ -8,8 +8,8 @@ const categories = [
   {
     "name": "French Fries",
     "category": "French Fries",
-    "note": "Classic, peri peri & loaded fries",
-    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1400&q=90"
+    "note": "Crispy fries, peri-peri masala & cheesy loaded fries",
+    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=90"
   },
   {
     "name": "Burgers",
@@ -20,8 +20,8 @@ const categories = [
   {
     "name": "Pizza",
     "category": "Pizza",
-    "note": "Cheesy oven-baked comfort",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1400&q=90"
+    "note": "Thin crust, Indian paneer & chicken favourites",
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=90"
   },
   {
     "name": "Waffles",
@@ -50,8 +50,8 @@ const categories = [
   {
     "name": "Beverages",
     "category": "Beverages",
-    "note": "Mojitos, Blue Lagoon & shakes",
-    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1400&q=90"
+    "note": "Mojitos, shakes, coolers & sparkling sodas",
+    "image": "https://images.unsplash.com/photo-1536935338788846bb9981813?auto=format&fit=crop&w=1000&q=90"
   },
   {
     "name": "Chaat",
@@ -147,8 +147,8 @@ window.COZY_MENU = [
     "name": "Tandoori Masala Fries",
     "category": "French Fries",
     "price": 269,
-    "description": "Indian-style masala fries with a smoky, tangy kick.",
-    "image": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=1000&q=88",
+    "description": "Crispy fries tossed with a visible red-orange tandoori masala seasoning.",
+    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -167,18 +167,18 @@ window.COZY_MENU = [
     "name": "Chilli Cheese Fries",
     "category": "French Fries",
     "price": 349,
-    "description": "A spicy, cheesy loaded favourite for sharing.",
-    "image": "https://images.unsplash.com/photo-1573019606806-9695d0a9739a?auto=format&fit=crop&w=1000&q=88",
+    "description": "Golden fries loaded with chilli, jalapeño-style peppers and melted cheese sauce.",
+    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
   {
     "id": "cozy-12",
-    "name": "Truffle Herb Fries",
+    "name": "Herb & Garlic Fries",
     "category": "French Fries",
     "price": 399,
-    "description": "Crispy fries with herbs and a premium truffle-style finish.",
-    "image": "https://images.unsplash.com/photo-1639744091985-3b6b4f6e6c8d?auto=format&fit=crop&w=1000&q=88",
+    "description": "Crispy fries tossed with visible herbs, garlic and cracked black pepper.",
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -217,8 +217,8 @@ window.COZY_MENU = [
     "name": "Tandoori Crunch Burger",
     "category": "Burgers",
     "price": 329,
-    "description": "Smoky Indian-inspired flavours with a crunchy patty.",
-    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1000&q=88",
+    "description": "A crunchy veg patty coated in tandoori spices, with lettuce and mint mayo.",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -227,28 +227,28 @@ window.COZY_MENU = [
     "name": "Double Cheese Veg Burger",
     "category": "Burgers",
     "price": 379,
-    "description": "Two vegetable patties stacked with two layers of melted cheese.",
-    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1000&q=88",
+    "description": "A double-stacked veg burger with two clearly visible melted cheese layers.",
+    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
   {
     "id": "cozy-18",
-    "name": "Spicy Peri Peri Burger",
+    "name": "Spicy Peri-Peri Veg Burger & Fries",
     "category": "Burgers",
     "price": 349,
-    "description": "A spicy patty with fresh salad and creamy peri-peri sauce.",
-    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1000&q=88",
+    "description": "A spicy peri-peri veg burger served with a side of crisp golden fries.",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
   {
     "id": "cozy-19",
-    "name": "Margherita Cheese Pizza",
+    "name": "Thin-Crust Margherita Pizza",
     "category": "Pizza",
     "price": 299,
-    "description": "Tomato, mozzarella and fragrant Italian herbs.",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=88",
+    "description": "Thin, crisp crust topped with tomato sauce, mozzarella and fresh basil.",
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -257,8 +257,8 @@ window.COZY_MENU = [
     "name": "Farmhouse Veg Pizza",
     "category": "Pizza",
     "price": 349,
-    "description": "Capsicum, onion, tomato and mushrooms on a cheesy base.",
-    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=88",
+    "description": "Classic Indian-style farmhouse pizza with capsicum, onion, tomato, corn and mushrooms.",
+    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -267,8 +267,8 @@ window.COZY_MENU = [
     "name": "Paneer Tikka Pizza",
     "category": "Pizza",
     "price": 399,
-    "description": "Tandoori paneer, peppers and a creamy cheese blend.",
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=88",
+    "description": "Visible paneer tikka cubes, onion, capsicum and melted cheese on a pizza base.",
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -294,11 +294,11 @@ window.COZY_MENU = [
   },
   {
     "id": "cozy-24",
-    "name": "Cozy Loaded Veg Pizza",
+    "name": "Paneer & Capsicum Pizza",
     "category": "Pizza",
     "price": 499,
-    "description": "A loaded café-style pizza with generous veggie toppings.",
-    "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=1000&q=88",
+    "description": "Indian-style pizza with paneer cubes, capsicum, onion and mozzarella.",
+    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -317,8 +317,8 @@ window.COZY_MENU = [
     "name": "Chocolate Overload Waffle",
     "category": "Waffles",
     "price": 349,
-    "description": "Warm waffle drizzled with rich chocolate sauce.",
-    "image": "https://images.unsplash.com/photo-1568051243858-533a607809c5?auto=format&fit=crop&w=1000&q=88",
+    "description": "A golden waffle covered in chocolate sauce, chocolate curls and chocolate chunks.",
+    "image": "https://images.unsplash.com/photo-1568051243858-533a607809c5?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -378,7 +378,7 @@ window.COZY_MENU = [
     "category": "Desserts",
     "price": 279,
     "description": "Chocolate brownie with crunchy walnut pieces.",
-    "image": "https://images.unsplash.com/photo-1607920591413-4ec007e70023?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1607920591413-4ec007e70023?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -417,8 +417,8 @@ window.COZY_MENU = [
     "name": "Chocolate Croissant",
     "category": "Desserts",
     "price": 329,
-    "description": "A flaky, buttery croissant filled with rich chocolate.",
-    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=88",
+    "description": "Flaky golden croissant with chocolate filling and a visible chocolate drizzle.",
+    "image": "https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -434,11 +434,11 @@ window.COZY_MENU = [
   },
   {
     "id": "cozy-38",
-    "name": "Classic Veg Club Sandwich",
+    "name": "Classic Veg Sandwich",
     "category": "Sandwiches",
     "price": 299,
-    "description": "Layered vegetables, cheese and a golden toasted finish.",
-    "image": "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1000&q=88",
+    "description": "A toasted sandwich layered with fresh vegetables, chutney and a light cheese filling.",
+    "image": "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -457,28 +457,28 @@ window.COZY_MENU = [
     "name": "Corn & Cheese Melt",
     "category": "Sandwiches",
     "price": 279,
-    "description": "Sweet corn and melted cheese in toasted bread.",
-    "image": "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=1000&q=88",
+    "description": "Toasted bread packed with sweet corn kernels and visibly melted cheese.",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
   {
     "id": "cozy-41",
-    "name": "Crispy Peri Peri Sandwich",
+    "name": "Crispy Chicken Sandwich",
     "category": "Sandwiches",
     "price": 299,
-    "description": "Crunchy filling with a spicy peri-peri kick.",
-    "image": "https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=1000&q=88",
+    "description": "Crispy chicken fillet with lettuce and a spicy creamy sauce in toasted bread.",
+    "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
-    "vegetarian": true
+    "vegetarian": false
   },
   {
     "id": "cozy-42",
-    "name": "Cozy Triple Decker",
+    "name": "Cheesy Grilled Sandwich",
     "category": "Sandwiches",
     "price": 399,
-    "description": "A generous café-style triple-decker sandwich.",
-    "image": "https://images.unsplash.com/photo-1550507992-eb63ffee0847?auto=format&fit=crop&w=1000&q=88",
+    "description": "Golden grilled sandwich with a generous melted cheese filling.",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -514,11 +514,11 @@ window.COZY_MENU = [
   },
   {
     "id": "cozy-46",
-    "name": "Desi Tandoori Paneer Pasta",
+    "name": "Paneer Tikka Pasta",
     "category": "Pasta",
     "price": 369,
-    "description": "Penne tossed in creamy tandoori masala sauce with paneer and capsicum.",
-    "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=1000&q=88",
+    "description": "Penne tossed with Indian masala sauce, grilled paneer cubes and capsicum.",
+    "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -534,11 +534,11 @@ window.COZY_MENU = [
   },
   {
     "id": "cozy-48",
-    "name": "Indian Masala Loaded Pasta",
+    "name": "Masala Loaded Pasta",
     "category": "Pasta",
     "price": 449,
-    "description": "A hearty pasta bowl with desi masala, vegetables, capsicum and spicy sauce.",
-    "image": "https://tb-static.uber.com/prod/image-proc/processed_images/fc064c4f016e00fb2f86969628616ba3/aa13fff7e2466014ca51307be81e7738.jpeg",
+    "description": "Pasta tossed in spicy Indian masala sauce with peppers, onion and herbs.",
+    "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -547,8 +547,8 @@ window.COZY_MENU = [
     "name": "Classic Lemon Mint Mojito",
     "category": "Beverages",
     "price": 249,
-    "description": "Fresh lime, mint and sparkling refreshment; zero alcohol.",
-    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=88",
+    "description": "A chilled lime-and-mint mocktail with crushed ice, fresh mint and citrus.",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -577,18 +577,18 @@ window.COZY_MENU = [
     "name": "Mango Cream Shake",
     "category": "Beverages",
     "price": 299,
-    "description": "A creamy mango shake with a smooth tropical finish.",
-    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=88",
+    "description": "Thick mango shake blended with mango pulp, milk and cream—no coffee or cookies.",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
   {
     "id": "cozy-53",
-    "name": "Chocolate Thick Shake",
+    "name": "KitKat Chocolate Shake",
     "category": "Beverages",
     "price": 329,
-    "description": "A rich chocolate shake finished café-style.",
-    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=1000&q=88",
+    "description": "A chocolate milkshake topped with crushed KitKat wafer pieces and chocolate drizzle.",
+    "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -597,8 +597,8 @@ window.COZY_MENU = [
     "name": "Strawberry Milkshake",
     "category": "Beverages",
     "price": 299,
-    "description": "A sweet strawberry shake blended until smooth.",
-    "image": "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1000&q=88",
+    "description": "Pink strawberry milkshake blended with strawberries, milk and vanilla ice cream.",
+    "image": "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -661,25 +661,124 @@ window.COZY_MENU = [
     "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/10/2/1246ab31-ef18-4751-a96b-7368a4cf5c97_77b88453-637b-44b7-a74f-2aa29bbf29cc.jpg",
     "featured": false,
     "vegetarian": true
-  }
-,
- {
+  },
+  {
     "id": "cozy-61",
     "name": "Classic Butter Croissant",
     "category": "Desserts",
     "price": 249,
-    "description": "Golden, buttery croissant with crisp, delicate layers.",
-    "image": "https://static.750g.com/images/1200-675/b21ceda10e0018214b11664ac5978ca1/croissant.jpeg",
+    "description": "Golden butter croissant with crisp, distinct flaky layers.",
+    "image": "https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1000&q=90",
     "featured": false,
     "vegetarian": true
   },
- {
+  {
     "id": "cozy-62",
     "name": "Almond Croissant",
     "category": "Desserts",
     "price": 329,
-    "description": "Flaky croissant topped with toasted almond flakes and a light sugar dusting.",
-    "image": "https://b.zmtcdn.com/data/pictures/chains/3/21852523/03aa1b0821d2959f18cca27d9b9d0001.jpg?crop=960%3A500%3B%2A%2C%2A&fit=around%7C960%7C500",
+    "description": "Almond croissant topped with sliced toasted almonds and a light sugar dusting.",
+    "image": "https://images.unsplash.com/photo-1608198093002-ad4e005484b8?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-63",
+    "name": "Oreo Cookies & Cream Shake",
+    "category": "Beverages",
+    "price": 329,
+    "description": "Creamy vanilla shake blended with Oreo cookies and topped with cookie crumble.",
+    "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-64",
+    "name": "Vanilla Bean Milkshake",
+    "category": "Beverages",
+    "price": 279,
+    "description": "A smooth vanilla milkshake topped with a soft swirl of whipped cream.",
+    "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-65",
+    "name": "Fresh Strawberry Cream Shake",
+    "category": "Beverages",
+    "price": 319,
+    "description": "A strawberry-pink shake finished with fresh strawberry pieces and cream.",
+    "image": "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-66",
+    "name": "Blue Lagoon Mocktail",
+    "category": "Beverages",
+    "price": 299,
+    "description": "Bright blue citrus mocktail with lemon, mint and ice.",
+    "image": "https://images.unsplash.com/photo-1536935338788846bb9981813?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-67",
+    "name": "Fresh Lime Soda",
+    "category": "Beverages",
+    "price": 229,
+    "description": "Refreshing sparkling lime soda served chilled with lemon and ice.",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-68",
+    "name": "Masala Lemon Soda",
+    "category": "Beverages",
+    "price": 239,
+    "description": "Fizzy lemon soda with Indian black salt, roasted cumin and fresh lime.",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-69",
+    "name": "Chicken Tikka Pizza",
+    "category": "Pizza",
+    "price": 499,
+    "description": "Tandoori chicken tikka pieces, onion, capsicum and melted mozzarella on a crisp base.",
+    "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": false
+  },
+  {
+    "id": "cozy-70",
+    "name": "Chicken 65 Pizza",
+    "category": "Pizza",
+    "price": 529,
+    "description": "Spicy Chicken 65 bites with onion, capsicum and mozzarella on a thin pizza crust.",
+    "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": false
+  },
+  {
+    "id": "cozy-71",
+    "name": "Achari Chicken Pizza",
+    "category": "Pizza",
+    "price": 529,
+    "description": "Chicken tikka tossed in tangy Indian achari spices, finished with cheese and peppers.",
+    "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=1000&q=90",
+    "featured": false,
+    "vegetarian": false
+  },
+  {
+    "id": "cozy-72",
+    "name": "Pani Puri / Golgappa",
+    "category": "Chaat",
+    "price": 229,
+    "description": "Crisp puris served with potato-chickpea filling, tangy tamarind chutney and spicy mint pani.",
+    "image": "https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1000",
     "featured": false,
     "vegetarian": true
   }
@@ -717,5 +816,4 @@ window.COZY_COMBOS = [
     "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=90",
     "description": "Buttery pastry and freshly brewed coffee, made to pair."
   }
-
 ];
