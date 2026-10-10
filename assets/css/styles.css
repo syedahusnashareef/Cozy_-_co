@@ -170,3 +170,13 @@
 .btn--small:hover{background:#956b36}
 @media(max-width:900px){.menu-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.food-grid--menu{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.menu-category-grid{grid-template-columns:1fr;gap:15px}.menu-category-card{min-height:235px}.food-grid--menu{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.food-card__content{padding:12px}.food-card__top{display:block}.food-card__top h3{font-size:17px}.food-price{font-size:14px;display:block;margin-bottom:8px}.food-card__content>p{font-size:10px}.food-card__bottom{align-items:flex-start;flex-direction:column}.food-card__tag{font-size:8px;left:8px;top:8px}.food-dot{right:8px;top:8px}}
+
+/* Premium food category cards: image-first, clear click target */
+.category-grid .menu-category-card,.menu-category-grid .menu-category-card{isolation:isolate;overflow:hidden;position:relative}
+.category-explore{position:relative;z-index:2;text-decoration:none!important;cursor:pointer}
+.category-card .category-explore{display:flex;align-items:center;justify-content:space-between;gap:18px;width:max-content;max-width:100%;margin-top:12px;padding:10px 14px;border:1px solid rgba(255,244,225,.78);border-radius:3px;background:rgba(36,21,15,.66);color:#fff8ee;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.category-card .category-explore b{font-size:18px;color:#e7c88e}
+.category-card .category-explore:hover{background:#e7c88e;color:#24150f}
+.category-card img{object-fit:cover;object-position:center;transform:scale(1.001);transition:transform .65s cubic-bezier(.2,.65,.2,1),filter .45s}
+.category-card:hover img{transform:scale(1.07);filter:saturate(1.1)}
+@media(max-width:560px){.category-card .category-explore{padding:9px 11px;font-size:9px}}
