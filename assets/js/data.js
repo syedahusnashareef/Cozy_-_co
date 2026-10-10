@@ -298,7 +298,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 499,
     "description": "A loaded café-style pizza with generous veggie toppings.",
-    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -538,7 +538,7 @@ window.COZY_MENU = [
     "category": "Pasta",
     "price": 449,
     "description": "A hearty pasta bowl with vegetables and signature sauce.",
-    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -658,7 +658,7 @@ window.COZY_MENU = [
     "category": "Chaat",
     "price": 279,
     "description": "Golden potato tikki with tangy chutneys, yogurt and Indian spices.",
-    "image": "https://images.pexels.com/photos/29699504/pexels-photo-29699504.jpeg?auto=compress&cs=tinysrgb&w=1000",
+    "image": "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&cs=tinysrgb&w=1000",
     "featured": false,
     "vegetarian": true
   }
