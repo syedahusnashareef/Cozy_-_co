@@ -30,8 +30,8 @@ const categories = [
     "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1400&q=90"
   },
   {
-    "name": "Brownies & Desserts",
-    "category": "Brownies & Desserts",
+    "name": "Desserts",
+    "category": "Desserts",
     "note": "Brownies, lava cake & sweet treats",
     "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1400&q=90"
   },
@@ -365,7 +365,7 @@ window.COZY_MENU = [
   {
     "id": "cozy-31",
     "name": "Classic Fudge Brownie",
-    "category": "Brownies & Desserts",
+    "category": "Desserts",
     "price": 249,
     "description": "Dense, rich chocolate brownie with a soft fudgy centre.",
     "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1000&q=88",
@@ -375,7 +375,7 @@ window.COZY_MENU = [
   {
     "id": "cozy-32",
     "name": "Walnut Chocolate Brownie",
-    "category": "Brownies & Desserts",
+    "category": "Desserts",
     "price": 279,
     "description": "Chocolate brownie with crunchy walnut pieces.",
     "image": "https://images.unsplash.com/photo-1607920591413-4ec007e70023?auto=format&fit=crop&w=1000&q=88",
@@ -385,7 +385,7 @@ window.COZY_MENU = [
   {
     "id": "cozy-33",
     "name": "Sizzling Brownie Sundae",
-    "category": "Brownies & Desserts",
+    "category": "Desserts",
     "price": 399,
     "description": "Warm brownie with a cool scoop-style dessert finish.",
     "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=88",
@@ -395,7 +395,7 @@ window.COZY_MENU = [
   {
     "id": "cozy-34",
     "name": "Chocolate Lava Cake",
-    "category": "Brownies & Desserts",
+    "category": "Desserts",
     "price": 329,
     "description": "A warm chocolate cake with a molten centre.",
     "image": "https://images.unsplash.com/photo-1617305855058-336d24456869?auto=format&fit=crop&w=1000&q=88",
@@ -405,7 +405,7 @@ window.COZY_MENU = [
   {
     "id": "cozy-35",
     "name": "Red Velvet Cheesecake",
-    "category": "Brownies & Desserts",
+    "category": "Desserts",
     "price": 429,
     "description": "Creamy cheesecake with a red velvet-inspired finish.",
     "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=88",
@@ -414,11 +414,11 @@ window.COZY_MENU = [
   },
   {
     "id": "cozy-36",
-    "name": "Chocolate Mousse Cup",
-    "category": "Brownies & Desserts",
-    "price": 299,
-    "description": "Light, silky chocolate mousse served chilled.",
-    "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=88",
+    "name": "Chocolate Croissant",
+    "category": "Desserts",
+    "price": 329,
+    "description": "A flaky, buttery croissant filled with rich chocolate.",
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
