@@ -27,6 +27,9 @@ document.addEventListener("error",function(e){
  const catCard=img.closest(".menu-category-card,.category-card");
  const catName=(catCard?.querySelector("h3")?.textContent||"").toLowerCase();
  const byName=[
+  [/chocolate croissant/, "https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1200&q=95"],
+  [/classic butter croissant/, "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=95"],
+  [/almond croissant/, "https://images.unsplash.com/photo-1608198093002-ad4e005484b8?auto=format&fit=crop&w=1200&q=95"],
   [/chicken tikka pizza/, "https://product-assets.faasos.io/production/product/image_1658347848254_Chicken_Tikka_Cheese_Burst_Pizza.jpg"],
   [/chicken 65 pizza/, "https://cdn.uengage.io/uploads/5/image-965669-1760076017.jpeg"],
   [/achari chicken pizza/, "https://d1w7312wesee68.cloudfront.net/HNJbBgyD8TwP2aEy8OO_t1jxR1b5W_cB8eSeKO5FYmk/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/menu_service/restaurants/52daeab1-324c-4561-b1b4-991ba656b62e/MenuItem/c6452f7c-4625-4ac6-b664-205a7b02aa28.jpg"],
