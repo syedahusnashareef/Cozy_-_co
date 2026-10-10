@@ -128,7 +128,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 229,
     "description": "Golden crisp fries finished with a light seasoning.",
-    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -138,7 +138,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 249,
     "description": "Crispy fries tossed in a bold peri-peri spice blend.",
-    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1200&q=92",
     "featured": true,
     "vegetarian": true
   },
@@ -148,7 +148,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 269,
     "description": "Crispy fries tossed with a visible red-orange tandoori masala seasoning.",
-    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -158,7 +158,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 329,
     "description": "Hot fries layered with a creamy cheese sauce.",
-    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -168,7 +168,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 349,
     "description": "Golden fries loaded with chilli, jalapeño-style peppers and melted cheese sauce.",
-    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -178,7 +178,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 399,
     "description": "Crispy fries tossed with visible herbs, garlic and cracked black pepper.",
-    "image": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -208,7 +208,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 279,
     "description": "A spiced vegetable patty finished with a visible melted cheese slice.",
-    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -218,7 +218,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 329,
     "description": "A crunchy veg patty coated in tandoori spices, with lettuce and mint mayo.",
-    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -228,7 +228,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 379,
     "description": "A double-stacked veg burger with two clearly visible melted cheese layers.",
-    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -238,7 +238,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 349,
     "description": "A spicy peri-peri veg burger served with a side of crisp golden fries.",
-    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -258,7 +258,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 349,
     "description": "Classic Indian-style farmhouse pizza with capsicum, onion, tomato, corn and mushrooms.",
-    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=90",
+    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -268,7 +268,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 399,
     "description": "Visible paneer tikka cubes, onion, capsicum and melted cheese on a pizza base.",
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -288,7 +288,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 329,
     "description": "Sweet corn, mozzarella and a golden crust.",
-    "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -298,7 +298,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 499,
     "description": "Indian-style pizza with paneer cubes, capsicum, onion and mozzarella.",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=92",
     "featured": false,
     "vegetarian": true
   },
@@ -799,7 +799,7 @@ window.COZY_COMBOS = [
     "items": "Indian Aloo Tikki Burger + Peri Peri Fries + Classic Lemon Mint Cooler",
     "price": 699,
     "tag": "SIGNATURE COMBO",
-    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.deliveryhero.io/image/fd-pk/Products/86844074.jpg?width=1200",
     "description": "A full Indian-inspired burger meal with crispy fries and a chilled drink."
   },
   {
@@ -807,7 +807,7 @@ window.COZY_COMBOS = [
     "items": "Farmhouse Veg Pizza + 2 Classic Lemon Mint Coolers",
     "price": 799,
     "tag": "FOR TWO",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=92",
     "description": "A cheesy shareable pizza combo for a relaxed catch-up."
   },
   {
@@ -815,7 +815,7 @@ window.COZY_COMBOS = [
     "items": "Nutella Crunch Waffle + 2 Café Lattes",
     "price": 849,
     "tag": "SWEET BREAK",
-    "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1200&q=92",
     "description": "A warm waffle and two café lattes for a sweet little date."
   },
   {
@@ -823,7 +823,7 @@ window.COZY_COMBOS = [
     "items": "2 Chocolate Filled Croissants + 2 Classic Cappuccinos",
     "price": 749,
     "tag": "BAKERY FAVOURITE",
-    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=90",
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=92",
     "description": "Buttery pastry and freshly brewed coffee, made to pair."
   }
 ];
