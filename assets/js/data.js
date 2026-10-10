@@ -178,7 +178,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 399,
     "description": "Crispy fries tossed with visible herbs, garlic and cracked black pepper.",
-    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=92",
+    "image": "https://itsonly.recipes/images/recipeimages/garlic-herb-truffle-fries.webp",
     "featured": false,
     "vegetarian": true
   },
@@ -807,7 +807,7 @@ window.COZY_COMBOS = [
     "items": "Farmhouse Veg Pizza + 2 Classic Lemon Mint Coolers",
     "price": 799,
     "tag": "FOR TWO",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=92",
+    "image": "https://cdn.website.dish.co/media/78/9c/9794615/La-Familia-Pizza-f4e8cf4a-76e8-4510-9e53-1d0725950065-png.jpg",
     "description": "A cheesy shareable pizza combo for a relaxed catch-up."
   },
   {
@@ -815,7 +815,7 @@ window.COZY_COMBOS = [
     "items": "Nutella Crunch Waffle + 2 Café Lattes",
     "price": 849,
     "tag": "SWEET BREAK",
-    "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1200&q=92",
+    "image": "https://api.thesecret.app/images/secrets/3366/thumbs/41674659980.png",
     "description": "A warm waffle and two café lattes for a sweet little date."
   },
   {
@@ -823,7 +823,7 @@ window.COZY_COMBOS = [
     "items": "2 Chocolate Filled Croissants + 2 Classic Cappuccinos",
     "price": 749,
     "tag": "BAKERY FAVOURITE",
-    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=92",
+    "image": "https://static.wixstatic.com/media/54a600_e8ea5001fba0489787e40ae2216ee438~mv2.jpg/v1/fill/w_1000%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01/54a600_e8ea5001fba0489787e40ae2216ee438~mv2.jpg",
     "description": "Buttery pastry and freshly brewed coffee, made to pair."
   }
 ];
