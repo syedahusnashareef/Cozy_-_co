@@ -79,7 +79,7 @@ window.COZY_MENU = [
     "price": 269,
     "description": "Smooth espresso blended with creamy steamed milk.",
     "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1000&q=88",
-    "featured": true,
+    "featured": false,
     "vegetarian": true
   },
   {
@@ -89,7 +89,7 @@ window.COZY_MENU = [
     "price": 299,
     "description": "Velvety latte finished with rich caramel sweetness.",
     "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=1000&q=88",
-    "featured": true,
+    "featured": false,
     "vegetarian": true
   },
   {
@@ -99,7 +99,7 @@ window.COZY_MENU = [
     "price": 319,
     "description": "Espresso, chocolate and steamed milk in one cozy cup.",
     "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=88",
-    "featured": true,
+    "featured": false,
     "vegetarian": true
   },
   {
@@ -109,7 +109,7 @@ window.COZY_MENU = [
     "price": 329,
     "description": "Chilled coffee with mellow hazelnut notes and ice.",
     "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=88",
-    "featured": true,
+    "featured": false,
     "vegetarian": true
   },
   {
@@ -119,7 +119,7 @@ window.COZY_MENU = [
     "price": 349,
     "description": "Thick café-style cold coffee with a creamy finish.",
     "image": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&w=1000&q=88",
-    "featured": true,
+    "featured": false,
     "vegetarian": true
   },
   {
@@ -139,7 +139,7 @@ window.COZY_MENU = [
     "price": 249,
     "description": "Crispy fries tossed in a bold peri-peri spice blend.",
     "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=88",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
@@ -189,7 +189,7 @@ window.COZY_MENU = [
     "price": 249,
     "description": "Crispy golden potato tikki with lettuce, onion and tangy burger sauce.",
     "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_300%2Ch_300%2Cc_fit/FOOD_CATALOG/IMAGES/CMS/2026/1/9/dc098193-cb75-4009-ba83-a588421e3625_150b79ee-10df-4df9-ba1b-f88eccc9288d.jpg",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
@@ -249,7 +249,7 @@ window.COZY_MENU = [
     "price": 299,
     "description": "Thin, crisp crust topped with tomato sauce, mozzarella and fresh basil.",
     "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=90",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
@@ -329,7 +329,7 @@ window.COZY_MENU = [
     "price": 379,
     "description": "Golden waffle topped with Oreo cookies, cookie crumble and chocolate drizzle.",
     "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/2/13/3748a8c9-f535-4512-add5-1fa92d475ff7_2ad6ac61-9ed9-4e9f-92b8-97ae66ad25fe.jpg",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
@@ -409,7 +409,7 @@ window.COZY_MENU = [
     "price": 429,
     "description": "A striking red velvet cake-and-cheesecake slice with creamy white cheesecake layers.",
     "image": "https://assets.tastemadecdn.net/images/fadd09/a0c23b492abf0b9d84fc/c0c520.jpg",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
@@ -449,7 +449,7 @@ window.COZY_MENU = [
     "price": 329,
     "description": "Tandoori paneer with peppers and mint sauce.",
     "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=1000&q=88",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
@@ -499,7 +499,7 @@ window.COZY_MENU = [
     "price": 329,
     "description": "Penne coated in a rich tomato-red arrabbiata sauce with chilli and garlic.",
     "image": "https://art.whisk.com/image/upload/fl_progressive%2Ch_560%2Cw_560%2Cc_fill%2Cdpr_2/v1762329659792/recipe/37ffe856babe063c7bf73d0a42b56f54.jpg",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
@@ -559,7 +559,7 @@ window.COZY_MENU = [
     "price": 279,
     "description": "A vivid blue citrus mocktail served over ice; zero alcohol.",
     "image": "https://images.unsplash.com/photo-1536935338788846bb9981813?auto=format&fit=crop&w=1000&q=88",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
@@ -609,7 +609,7 @@ window.COZY_MENU = [
     "price": 249,
     "description": "Crisp puris filled with chilled yogurt, sweet-tangy chutneys and crunchy sev.",
     "image": "https://images.pexels.com/photos/32894826/pexels-photo-32894826.jpeg?auto=compress&cs=tinysrgb&w=1000",
-    "featured": false,
+    "featured": true,
     "vegetarian": true
   },
   {
