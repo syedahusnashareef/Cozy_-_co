@@ -57,7 +57,7 @@ const categories = [
     "name": "Chaat",
     "category": "Chaat",
     "note": "Indian street-food favourites, served café-style",
-    "image": "https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1000"
+    "image": "https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1200"
   }
 ];
 window.COZY_CATEGORIES = categories;
@@ -88,7 +88,7 @@ window.COZY_MENU = [
     "category": "Coffee",
     "price": 299,
     "description": "Velvety latte finished with rich caramel sweetness.",
-    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=1000&q=88",
     "featured": true,
     "vegetarian": true
   },
@@ -98,7 +98,7 @@ window.COZY_MENU = [
     "category": "Coffee",
     "price": 319,
     "description": "Espresso, chocolate and steamed milk in one cozy cup.",
-    "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=88",
     "featured": true,
     "vegetarian": true
   },
@@ -108,7 +108,7 @@ window.COZY_MENU = [
     "category": "Coffee",
     "price": 329,
     "description": "Chilled coffee with mellow hazelnut notes and ice.",
-    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=88",
     "featured": true,
     "vegetarian": true
   },
@@ -118,7 +118,7 @@ window.COZY_MENU = [
     "category": "Coffee",
     "price": 349,
     "description": "Thick café-style cold coffee with a creamy finish.",
-    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&w=1000&q=88",
     "featured": true,
     "vegetarian": true
   },
@@ -168,7 +168,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 349,
     "description": "A spicy, cheesy loaded favourite for sharing.",
-    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1573019606806-9695d0a9739a?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -178,7 +178,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 399,
     "description": "Crispy fries with herbs and a premium truffle-style finish.",
-    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1639744091985-3b6b4f6e6c8d?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -218,7 +218,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 329,
     "description": "Smoky Indian-inspired flavours with a crunchy patty.",
-    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -228,7 +228,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 379,
     "description": "A hearty veg patty with double melted cheese.",
-    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -238,7 +238,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 349,
     "description": "A spicy patty with fresh salad and creamy peri-peri sauce.",
-    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -278,7 +278,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 379,
     "description": "A fiery peri-peri sauce with peppers and melted cheese.",
-    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -288,7 +288,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 329,
     "description": "Sweet corn, mozzarella and a golden crust.",
-    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -298,7 +298,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 499,
     "description": "A loaded café-style pizza with generous veggie toppings.",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -318,7 +318,7 @@ window.COZY_MENU = [
     "category": "Waffles",
     "price": 349,
     "description": "Warm waffle drizzled with rich chocolate sauce.",
-    "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1568051243858-533a607809c5?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -328,7 +328,7 @@ window.COZY_MENU = [
     "category": "Waffles",
     "price": 379,
     "description": "Chocolate waffle topped with cookie crumble.",
-    "image": "https://images.unsplash.com/photo-1568051243858-533a607809c5?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -338,7 +338,7 @@ window.COZY_MENU = [
     "category": "Waffles",
     "price": 369,
     "description": "Fresh strawberry-style topping with a creamy finish.",
-    "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -348,7 +348,7 @@ window.COZY_MENU = [
     "category": "Waffles",
     "price": 429,
     "description": "Caramelised biscuit spread and crunchy Biscoff crumbs.",
-    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -358,7 +358,7 @@ window.COZY_MENU = [
     "category": "Waffles",
     "price": 449,
     "description": "A dessert waffle with brownie bites and chocolate fudge.",
-    "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -418,7 +418,7 @@ window.COZY_MENU = [
     "category": "Brownies & Desserts",
     "price": 299,
     "description": "Light, silky chocolate mousse served chilled.",
-    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -448,7 +448,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 329,
     "description": "Tandoori paneer with peppers and mint sauce.",
-    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -458,7 +458,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 279,
     "description": "Sweet corn and melted cheese in toasted bread.",
-    "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -468,7 +468,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 299,
     "description": "Crunchy filling with a spicy peri-peri kick.",
-    "image": "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -478,7 +478,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 399,
     "description": "A generous café-style triple-decker sandwich.",
-    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1550507992-eb63ffee0847?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -508,7 +508,7 @@ window.COZY_MENU = [
     "category": "Pasta",
     "price": 399,
     "description": "Herby basil pesto with a creamy café-style finish.",
-    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -528,7 +528,7 @@ window.COZY_MENU = [
     "category": "Pasta",
     "price": 379,
     "description": "Tender pasta folded through a rich cheese sauce.",
-    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -538,7 +538,7 @@ window.COZY_MENU = [
     "category": "Pasta",
     "price": 449,
     "description": "A hearty pasta bowl with vegetables and signature sauce.",
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -568,7 +568,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 259,
     "description": "Watermelon-inspired refreshment with cool mint.",
-    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -578,7 +578,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 299,
     "description": "A creamy mango shake with a smooth tropical finish.",
-    "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -588,7 +588,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 329,
     "description": "A rich chocolate shake finished café-style.",
-    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -598,7 +598,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 299,
     "description": "A sweet strawberry shake blended until smooth.",
-    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
