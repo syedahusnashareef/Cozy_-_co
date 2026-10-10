@@ -2,56 +2,62 @@ const categories = [
   {
     "name": "Coffee",
     "category": "Coffee",
-    "note": "Espresso bar favourites",
-    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=90"
+    "note": "Caramel lattes, cappuccinos & cold coffee",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=90"
   },
   {
     "name": "French Fries",
     "category": "French Fries",
-    "note": "Golden, loaded & full of flavour",
-    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1200&q=90"
+    "note": "Classic, peri peri & loaded fries",
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1400&q=90"
   },
   {
     "name": "Burgers",
     "category": "Burgers",
-    "note": "Big, juicy café-style bites",
-    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=90"
+    "note": "Indian-inspired café favourites",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1400&q=90"
   },
   {
     "name": "Pizza",
     "category": "Pizza",
-    "note": "Cheesy favourites, made to share",
-    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=90"
+    "note": "Cheesy oven-baked comfort",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1400&q=90"
   },
   {
     "name": "Waffles",
     "category": "Waffles",
-    "note": "Golden waffles with indulgent toppings",
-    "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1200&q=90"
+    "note": "Golden waffles & dessert toppings",
+    "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1400&q=90"
   },
   {
     "name": "Brownies & Desserts",
     "category": "Brownies & Desserts",
-    "note": "Sweet endings worth slowing down for",
-    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&q=90"
+    "note": "Brownies, lava cake & sweet treats",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1400&q=90"
   },
   {
     "name": "Sandwiches",
     "category": "Sandwiches",
-    "note": "Toasted, grilled & generously filled",
-    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=90"
+    "note": "Grilled, toasted & generously filled",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1400&q=90"
   },
   {
     "name": "Pasta",
     "category": "Pasta",
-    "note": "Creamy sauces and comfort classics",
-    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=90"
+    "note": "Creamy, tomato & pesto favourites",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1400&q=90"
   },
   {
     "name": "Beverages",
     "category": "Beverages",
-    "note": "Coolers, mocktails, shakes & more",
-    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1200&q=90"
+    "note": "Mojitos, Blue Lagoon & shakes",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1400&q=90"
+  },
+  {
+    "name": "Chaat",
+    "category": "Chaat",
+    "note": "Indian street-food favourites, served café-style",
+    "image": "https://images.unsplash.com/photo-1753357303396-704b5abe8945?auto=format&fit=crop&w=1400&q=90"
   }
 ];
 window.COZY_CATEGORIES = categories;
@@ -593,6 +599,66 @@ window.COZY_MENU = [
     "price": 299,
     "description": "A sweet strawberry shake blended until smooth.",
     "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=88",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-55",
+    "name": "Dahi Puri",
+    "category": "Chaat",
+    "price": 249,
+    "description": "Crisp puris filled with potato, chilled yogurt, sweet chutney and fresh sev.",
+    "image": "https://images.pexels.com/photos/29699504/pexels-photo-29699504.jpeg?auto=compress&cs=tinysrgb&w=1000",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-56",
+    "name": "Mumbai Pav Bhaji",
+    "category": "Chaat",
+    "price": 299,
+    "description": "Buttery pav served with richly spiced mashed vegetables and fresh lemon.",
+    "image": "https://images.unsplash.com/photo-1753357303396-704b5abe8945?auto=format&fit=crop&w=1000&q=88",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-57",
+    "name": "Cheese Pav Bhaji",
+    "category": "Chaat",
+    "price": 349,
+    "description": "Mumbai-style bhaji topped with a generous layer of melted cheese.",
+    "image": "https://images.unsplash.com/photo-1619193099598-6856ec4e2a87?auto=format&fit=crop&w=1000&q=88",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-58",
+    "name": "Extra Cheese Pav Bhaji",
+    "category": "Chaat",
+    "price": 399,
+    "description": "A rich, extra-cheesy pav bhaji finished with butter and coriander.",
+    "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=1000&q=88",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-59",
+    "name": "Papdi Chaat",
+    "category": "Chaat",
+    "price": 249,
+    "description": "Crispy papdi topped with potato, yogurt, chutneys and crunchy sev.",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=88",
+    "featured": false,
+    "vegetarian": true
+  },
+  {
+    "id": "cozy-60",
+    "name": "Aloo Tikki Chaat",
+    "category": "Chaat",
+    "price": 279,
+    "description": "Golden potato tikki with tangy chutneys, yogurt and Indian spices.",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97b46?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   }
