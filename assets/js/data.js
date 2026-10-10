@@ -9,7 +9,7 @@ const categories = [
     "name": "French Fries",
     "category": "French Fries",
     "note": "Crispy fries, peri-peri masala & cheesy loaded fries",
-    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=90"
+    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=1200&q=90"
   },
   {
     "name": "Burgers",
@@ -148,7 +148,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 269,
     "description": "Crispy fries tossed with a visible red-orange tandoori masala seasoning.",
-    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1000&q=90",
+    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=1200&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -168,7 +168,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 349,
     "description": "Golden fries loaded with chilli, jalapeño-style peppers and melted cheese sauce.",
-    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=1000&q=90",
+    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1200&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -178,7 +178,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 399,
     "description": "Crispy fries tossed with visible herbs, garlic and cracked black pepper.",
-    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=90",
+    "image": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=1200&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -218,7 +218,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 329,
     "description": "A crunchy veg patty coated in tandoori spices, with lettuce and mint mayo.",
-    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1000&q=90",
+    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1200&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -228,7 +228,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 379,
     "description": "A double-stacked veg burger with two clearly visible melted cheese layers.",
-    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=1000&q=90",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -238,7 +238,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 349,
     "description": "A spicy peri-peri veg burger served with a side of crisp golden fries.",
-    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1000&q=90",
+    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1200&q=90",
     "featured": false,
     "vegetarian": true
   },
@@ -268,7 +268,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 399,
     "description": "Visible paneer tikka cubes, onion, capsicum and melted cheese on a pizza base.",
-    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=95",
     "featured": false,
     "vegetarian": true
   },
@@ -298,7 +298,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 499,
     "description": "Indian-style pizza with paneer cubes, capsicum, onion and mozzarella.",
-    "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=95",
     "featured": false,
     "vegetarian": true
   },
@@ -438,7 +438,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 299,
     "description": "A toasted sandwich layered with fresh vegetables, chutney and a light cheese filling.",
-    "image": "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/VegeeSandwich.jpg",
     "featured": false,
     "vegetarian": true
   },
@@ -458,7 +458,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 279,
     "description": "Toasted bread packed with sweet corn kernels and visibly melted cheese.",
-    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/9/1/4a20aa78-c745-4b0d-a2b7-55ac212f00e9_727eca28-9cbb-4f9e-92b8-97ae66ad59948.jpg",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/9/1/4a20aa78-c745-4b0d-a2b7-55ac212f00e9_727eca28-9cbb-4f2f-8914-365d96a59948.jpg",
     "featured": false,
     "vegetarian": true
   },
@@ -468,7 +468,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 299,
     "description": "Crispy golden chicken fillet with lettuce, pickles and creamy pepper mayo in a toasted sandwich.",
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20Chicken%20Sandwich.jpg",
+    "image": "https://images.pexels.com/photos/36879213/pexels-photo-36879213.jpeg?auto=compress&cs=tinysrgb&w=1200",
     "featured": false,
     "vegetarian": false
   },
@@ -478,7 +478,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 399,
     "description": "Golden grilled sandwich with a generous melted cheese filling.",
-    "image": "https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://assets.lummi.ai/assets/Qmc6TmFo8K83WQH5oFCd7MNiKYiwADCtVzvThAFttm8k2L",
     "featured": false,
     "vegetarian": true
   },
@@ -558,7 +558,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 279,
     "description": "A bright tropical pineapple cooler with fresh mint, citrus and plenty of ice.",
-    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.unsplash.com/photo-1536935338788846bb9981813?auto=format&fit=crop&w=1200&q=95",
     "featured": true,
     "vegetarian": true
   },
@@ -588,7 +588,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 329,
     "description": "Cookies-and-cream shake blended with Oreo-style chocolate sandwich cookies and topped with cookie crumbs.",
-    "image": "https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/irresistible-cookie-cream-milkshake-delight-eT_79tef8fIBk8nH9wer8.webp",
+    "image": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600%2Ch_468/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2026/3/20/6e561911-ff3d-4005-85f2-6388df5c6c49_Manch26154FOODSHOTS298174e20ae99437a91d1ab49f20cdaae.JPG",
     "featured": false,
     "vegetarian": true
   },
@@ -598,7 +598,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 299,
     "description": "A smooth banana milkshake blended with ripe banana and chilled milk.",
-    "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_300%2Ch_300%2Cc_fit/FOOD_CATALOG/IMAGES/CMS/2025/2/9/4bf5e3fa-678c-49dd-b73d-404208ed4ade_35753430-8583-4af9-abed-cc6c1edd846c.jpg",
     "featured": false,
     "vegetarian": true
   },
@@ -688,7 +688,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 329,
     "description": "A creamy cookies-and-cream shake topped with whipped cream and chocolate cookie pieces.",
-    "image": "https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/irresistible-cookie-cream-milkshake-delight-eT_79tef8fIBk8nH9wer8.webp",
+    "image": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600%2Ch_468/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2026/3/20/6e561911-ff3d-4005-85f2-6388df5c6c49_Manch26154FOODSHOTS298174e20ae99437a91d1ab49f20cdaae.JPG",
     "featured": false,
     "vegetarian": true
   },
@@ -718,7 +718,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 299,
     "description": "Bright blue citrus mocktail with lemon, mint and ice.",
-    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.unsplash.com/photo-1536935338788846bb9981813?auto=format&fit=crop&w=1200&q=95",
     "featured": false,
     "vegetarian": true
   },
@@ -788,7 +788,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 379,
     "description": "A crunchy golden chicken fillet stacked with lettuce, cheese and creamy house sauce in a toasted brioche-style bun.",
-    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.deliveryhero.io/image/fd-pk/Products/97876981.jpg?width=1200",
     "featured": false,
     "vegetarian": false
   }
