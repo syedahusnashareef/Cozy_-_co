@@ -558,7 +558,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 279,
     "description": "A bright tropical pineapple cooler with fresh mint, citrus and plenty of ice.",
-    "image": "https://images.unsplash.com/photo-1536935338788846bb9981813?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=1200&q=92",
     "featured": true,
     "vegetarian": true
   },
@@ -688,7 +688,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 329,
     "description": "A creamy cookies-and-cream shake topped with whipped cream and chocolate cookie pieces.",
-    "image": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600%2Ch_468/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2026/3/20/6e561911-ff3d-4005-85f2-6388df5c6c49_Manch26154FOODSHOTS298174e20ae99437a91d1ab49f20cdaae.JPG",
+    "image": "https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/irresistible-cookie-cream-milkshake-delight-eT_79tef8fIBk8nH9wer8.webp",
     "featured": false,
     "vegetarian": true
   },
