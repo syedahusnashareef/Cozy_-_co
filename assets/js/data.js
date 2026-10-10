@@ -428,7 +428,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 249,
     "description": "A toasted Indian-style sandwich with spiced vegetables.",
-    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://images.squarespace-cdn.com/content/v1/62df38bd768870226dced4a0/1718145969633-LXZIU4GNTGZCG3CZM1GV/bombay%2Binspired%2Bsandwich.jpg",
     "featured": false,
     "vegetarian": true
   },
@@ -448,7 +448,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 329,
     "description": "Tandoori paneer with peppers and mint sauce.",
-    "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://b.zmtcdn.com/data/pictures/6/19664986/1844b8c01d5169cdbf0f208fb534fa37.jpg?crop=960%3A500%3B%2A%2C%2A&fit=around%7C960%3A500",
     "featured": true,
     "vegetarian": true
   },
@@ -458,7 +458,7 @@ window.COZY_MENU = [
     "category": "Sandwiches",
     "price": 279,
     "description": "Toasted bread packed with sweet corn kernels and visibly melted cheese.",
-    "image": "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=1200&q=95",
+    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/9/1/4a20aa78-c745-4b0d-a2b7-55ac212f00e9_727eca28-9cbb-4f9e-92b8-97ae66ad59948.jpg",
     "featured": false,
     "vegetarian": true
   },
@@ -467,8 +467,8 @@ window.COZY_MENU = [
     "name": "Crispy Chicken Sandwich",
     "category": "Sandwiches",
     "price": 299,
-    "description": "Crispy chicken fillet with lettuce and a spicy creamy sauce in toasted bread.",
-    "image": "https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=1200&q=95",
+    "description": "Crispy golden chicken fillet with lettuce, pickles and creamy pepper mayo in a toasted sandwich.",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20Chicken%20Sandwich.jpg",
     "featured": false,
     "vegetarian": false
   },
@@ -488,7 +488,7 @@ window.COZY_MENU = [
     "category": "Pasta",
     "price": 349,
     "description": "Pasta tossed in a silky creamy white sauce.",
-    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=95",
     "featured": false,
     "vegetarian": true
   },
@@ -508,7 +508,7 @@ window.COZY_MENU = [
     "category": "Pasta",
     "price": 399,
     "description": "Herby basil pesto with a creamy café-style finish.",
-    "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.slurrp.com/prodrich_article/a240w689cd8.webp?height=500&impolicy=slurrp-20210601&width=880",
     "featured": false,
     "vegetarian": true
   },
@@ -517,8 +517,8 @@ window.COZY_MENU = [
     "name": "Paneer Tikka Pasta",
     "category": "Pasta",
     "price": 369,
-    "description": "Penne tossed with Indian masala sauce, grilled paneer cubes and capsicum.",
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=95",
+    "description": "Tandoori-spiced paneer cubes folded through creamy Indian masala pasta.",
+    "image": "https://cdn.shopify.com/s/files/1/0638/6460/2881/files/paneer_pasta_600x600.png?v=1706872917",
     "featured": false,
     "vegetarian": true
   },
@@ -537,8 +537,8 @@ window.COZY_MENU = [
     "name": "Masala Loaded Pasta",
     "category": "Pasta",
     "price": 449,
-    "description": "Pasta tossed in spicy Indian masala sauce with peppers, onion and herbs.",
-    "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=1200&q=95",
+    "description": "Penne tossed in a rich desi onion-tomato masala with capsicum and herbs.",
+    "image": "https://www.goodness-farm.com/cdn/shop/files/a-high-resolution-professional-food-photograph-of-a-plated-fusili-shaped-pasta-dark-brownish-in-colour-mixed-in-garnished-with-indian-masala-of-onion-tomatoe-base-with-paneer-roasted.png?v=1764419586&width=1946",
     "featured": false,
     "vegetarian": true
   },
@@ -567,8 +567,8 @@ window.COZY_MENU = [
     "name": "Watermelon Mint Cooler",
     "category": "Beverages",
     "price": 259,
-    "description": "Watermelon-inspired refreshment with cool mint.",
-    "image": "https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=1200&q=95",
+    "description": "Fresh watermelon cooler with mint leaves, lime and ice.",
+    "image": "https://www.coolinarco.com/wp-content/uploads/2023/09/ds0887_Watermelon_Mint_Cooler_59df4cc9-554f-4190-888d-734535495916.jpg",
     "featured": false,
     "vegetarian": true
   },
@@ -577,8 +577,8 @@ window.COZY_MENU = [
     "name": "Mango Cream Shake",
     "category": "Beverages",
     "price": 299,
-    "description": "Thick mango shake blended with mango pulp, milk and cream—no coffee or cookies.",
-    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1200&q=95",
+    "description": "Thick mango shake topped with fresh mango pieces and a creamy finish.",
+    "image": "https://imgmediagumlet.lbb.in/media/2019/05/5cdcb72d6ac075021983804f_1557968685531.jpg",
     "featured": false,
     "vegetarian": true
   },
@@ -587,8 +587,8 @@ window.COZY_MENU = [
     "name": "KitKat Chocolate Shake",
     "category": "Beverages",
     "price": 329,
-    "description": "A chocolate milkshake topped with crushed KitKat wafer pieces and chocolate drizzle.",
-    "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1200&q=95",
+    "description": "Cookies-and-cream shake blended with Oreo-style chocolate sandwich cookies and topped with cookie crumbs.",
+    "image": "https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/irresistible-cookie-cream-milkshake-delight-eT_79tef8fIBk8nH9wer8.webp",
     "featured": false,
     "vegetarian": true
   },
@@ -597,8 +597,8 @@ window.COZY_MENU = [
     "name": "Banana Milkshake",
     "category": "Beverages",
     "price": 299,
-    "description": "A creamy banana milkshake blended with ripe banana and chilled milk.",
-    "image": "https://b.zmtcdn.com/data/pictures/chains/9/19342739/2c6721efa0e07d3ccfae61b42d47d120.jpg",
+    "description": "A smooth banana milkshake blended with ripe banana and chilled milk.",
+    "image": "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1200&q=95",
     "featured": false,
     "vegetarian": true
   },
@@ -687,8 +687,8 @@ window.COZY_MENU = [
     "name": "Oreo Cookies & Cream Shake",
     "category": "Beverages",
     "price": 329,
-    "description": "Creamy vanilla shake blended with Oreo cookies and topped with cookie crumble.",
-    "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=1200&q=95",
+    "description": "A creamy cookies-and-cream shake topped with whipped cream and chocolate cookie pieces.",
+    "image": "https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/irresistible-cookie-cream-milkshake-delight-eT_79tef8fIBk8nH9wer8.webp",
     "featured": false,
     "vegetarian": true
   },
@@ -718,7 +718,7 @@ window.COZY_MENU = [
     "category": "Beverages",
     "price": 299,
     "description": "Bright blue citrus mocktail with lemon, mint and ice.",
-    "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600/a5h6jkaylcegymerre5n",
+    "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1200&q=95",
     "featured": false,
     "vegetarian": true
   },
@@ -727,8 +727,8 @@ window.COZY_MENU = [
     "name": "Fresh Lime Soda",
     "category": "Beverages",
     "price": 229,
-    "description": "Refreshing sparkling lime soda served chilled with lemon and ice.",
-    "image": "https://i0.wp.com/mayuris-jikoni.com/wp-content/uploads/2012/07/nimbu-pani-8.jpg?resize=900%2C1200&ssl=1",
+    "description": "Chilled sparkling lime soda with fresh lime slices, mint and a lightly salted rim.",
+    "image": "https://www.prabhatkhabar.com/_next/image?q=75&url=https%3A%2F%2Fwpmedia.prabhatkhabar.com%2Fuploads%2F2025%2F10%2Ffresh-lime-sodaa.jpg&w=3840",
     "featured": false,
     "vegetarian": true
   },
@@ -737,8 +737,8 @@ window.COZY_MENU = [
     "name": "Masala Lemon Soda",
     "category": "Beverages",
     "price": 239,
-    "description": "Fizzy lemon soda with Indian black salt, roasted cumin and fresh lime.",
-    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1200&q=95",
+    "description": "Indian masala lemon soda with lemon, mint, ice and a tangy chilli-salt rim.",
+    "image": "https://catalogue.bikanervala.com/cdn/shop/files/MocktailMasalaLemonade.jpg?v=1776840835&width=1020",
     "featured": false,
     "vegetarian": true
   },
@@ -781,6 +781,16 @@ window.COZY_MENU = [
     "image": "https://media-assets.swiggy.com/swiggy/image/upload/f_auto%2Cq_auto%2Cfl_lossy/4d5ad16a55516140bfc63d51a3e9dabc",
     "featured": false,
     "vegetarian": true
+  },
+  {
+    "id": "cozy-73",
+    "name": "Crispy Chicken Burger",
+    "category": "Burgers",
+    "price": 379,
+    "description": "A crunchy golden chicken fillet stacked with lettuce, cheese and creamy house sauce in a toasted brioche-style bun.",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=95",
+    "featured": false,
+    "vegetarian": false
   }
 ];
 window.COZY_COMBOS = [
