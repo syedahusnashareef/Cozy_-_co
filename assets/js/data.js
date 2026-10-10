@@ -238,7 +238,7 @@ window.COZY_MENU = [
     "category": "Burgers",
     "price": 349,
     "description": "A spicy patty with fresh salad and creamy peri-peri sauce.",
-    "image": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -298,7 +298,7 @@ window.COZY_MENU = [
     "category": "Pizza",
     "price": 499,
     "description": "A loaded café-style pizza with generous veggie toppings.",
-    "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -518,7 +518,7 @@ window.COZY_MENU = [
     "category": "Pasta",
     "price": 369,
     "description": "A comforting blend of tomato and creamy white sauce.",
-    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -538,7 +538,7 @@ window.COZY_MENU = [
     "category": "Pasta",
     "price": 449,
     "description": "A hearty pasta bowl with vegetables and signature sauce.",
-    "image": "https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   },
@@ -658,7 +658,7 @@ window.COZY_MENU = [
     "category": "Chaat",
     "price": 279,
     "description": "Golden potato tikki with tangy chutneys, yogurt and Indian spices.",
-    "image": "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&cs=tinysrgb&w=1000",
+    "image": "https://images.pexels.com/photos/1601050690597-df0568f70950/pexels-photo-1601050690597-df0568f70950.jpeg?auto=compress&cs=tinysrgb&w=1000",
     "featured": false,
     "vegetarian": true
   }
