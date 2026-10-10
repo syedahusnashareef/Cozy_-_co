@@ -58,7 +58,8 @@ document.addEventListener("error",function(e){
   "chaat":["https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/32894826/pexels-photo-32894826.jpeg?auto=compress&cs=tinysrgb&w=1200"]
  };
  let choices=key?sources[key]:(isCombo?["https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=92"]:categorySources[cat]||[]);
- const index=Number(img.dataset.fallbackIndex||0);
+ let index=Number(img.dataset.fallbackIndex||0);
+ while(index<choices.length&&choices[index]===img.src)index++;
  if(index<choices.length){
   img.dataset.fallbackIndex=String(index+1);
   img.src=choices[index];
