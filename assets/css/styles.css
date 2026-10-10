@@ -110,3 +110,27 @@
 .combo-card__image{background:#f2e7d8;padding:8px}
 .combo-card__image img{object-fit:contain;border-radius:14px}
 @media(max-width:760px){.food-card__image{padding:6px}.combo-card__image{padding:6px}}
+
+
+/* Localhost menu card compatibility — keep the original Cozy & Co. card structure */
+.food-grid--menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px}
+.food-card{min-width:0;overflow:hidden;background:var(--paper,#fffaf2);border:1px solid rgba(56,34,25,.12);box-shadow:0 14px 35px rgba(36,21,15,.08);transition:transform .28s ease,box-shadow .28s ease}
+.food-card:hover{transform:translateY(-4px);box-shadow:0 22px 42px rgba(36,21,15,.13)}
+.food-card__image-wrap{height:clamp(185px,20vw,245px);position:relative;overflow:hidden;background:#e6d5c0}
+.food-card__image{width:100%;height:100%;display:block;object-fit:cover;object-position:center;transition:transform .55s ease}
+.food-card:hover .food-card__image{transform:scale(1.045)}
+.food-card__tag{position:absolute;left:13px;top:13px;max-width:75%;padding:7px 10px;border-radius:2px;background:rgba(36,21,15,.78);color:#fff4e5;font-size:9px;letter-spacing:.1em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.food-dot{position:absolute;right:13px;top:13px;width:14px;height:14px;border:2px solid #fff;border-radius:3px;background:#2d8b57;box-shadow:0 1px 5px #0002}
+.food-dot.is-nonveg{background:#c44738}
+.food-card__content{padding:20px 20px 18px}
+.food-card__top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.food-card__top h3{margin:0;font-family:var(--serif,'Playfair Display',Georgia,serif);font-size:clamp(18px,1.55vw,23px);font-weight:500;line-height:1.25;color:var(--espresso,#24150F)}
+.food-price{flex:none;font-size:15px;font-weight:700;white-space:nowrap;color:var(--espresso,#24150F)}
+.food-card__content>p{min-height:44px;margin:11px 0 17px;color:var(--muted,#8e7968);font-size:12px;line-height:1.7}
+.food-card__bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:13px;border-top:1px solid rgba(56,34,25,.13)}
+.food-category{font-size:9px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted,#8e7968)}
+.btn--small{min-height:34px;padding:0 14px;border:1px solid var(--espresso,#24150F);border-radius:2px;background:var(--espresso,#24150F);color:#fff4e5;font-size:11px;font-weight:700;cursor:pointer;transition:background .2s,color .2s}
+.btn--small:hover{background:var(--gold,#c58a48);border-color:var(--gold,#c58a48);color:var(--espresso,#24150F)}
+@media(max-width:1000px){.food-grid--menu{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.food-card__image-wrap{height:clamp(170px,25vw,220px)}}
+@media(max-width:520px){.food-grid--menu{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.food-card__image-wrap{height:clamp(125px,38vw,175px)}.food-card__content{padding:12px}.food-card__top{display:block}.food-card__top h3{font-size:15px;margin-bottom:6px}.food-price{font-size:13px}.food-card__content>p{min-height:0;font-size:11px;line-height:1.55;margin:8px 0 12px}.food-card__bottom{gap:7px;padding-top:10px}.food-category{font-size:8px}.btn--small{min-height:30px;padding:0 9px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.food-card,.food-card__image{transition:none!important}}
