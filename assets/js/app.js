@@ -27,6 +27,19 @@ document.addEventListener("error",function(e){
  const catCard=img.closest(".menu-category-card,.category-card");
  const catName=(catCard?.querySelector("h3")?.textContent||"").toLowerCase();
  const byName=[
+  [/crispy chicken burger/, "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=95"],
+  [/bombay masala sandwich/, "https://images.squarespace-cdn.com/content/v1/62df38bd768870226dced4a0/1718145969633-LXZIU4GNTGZCG3CZM1GV/bombay%2Binspired%2Bsandwich.jpg"],
+  [/classic veg sandwich/, "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1200&q=95"],
+  [/paneer tikka sandwich/, "https://b.zmtcdn.com/data/pictures/6/19664986/1844b8c01d5169cdbf0f208fb534fa37.jpg?crop=960%3A500%3B%2A%2C%2A&fit=around%7C960%3A500"],
+  [/corn & cheese melt/, "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/9/1/4a20aa78-c745-4b0d-a2b7-55ac212f00e9_727eca28-9cbb-4f9e-92b8-97ae66ad59948.jpg"],
+  [/crispy chicken sandwich/, "https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20Chicken%20Sandwich.jpg"],
+  [/cheesy grilled sandwich/, "https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=1200&q=95"],
+  [/watermelon mint cooler/, "https://www.coolinarco.com/wp-content/uploads/2023/09/ds0887_Watermelon_Mint_Cooler_59df4cc9-554f-4190-888d-734535495916.jpg"],
+  [/mango cream shake/, "https://imgmediagumlet.lbb.in/media/2019/05/5cdcb72d6ac075021983804f_1557968685531.jpg"],
+  [/oreo cookies & cream shake/, "https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/irresistible-cookie-cream-milkshake-delight-eT_79tef8fIBk8nH9wer8.webp"],
+  [/banana milkshake/, "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1200&q=95"],
+  [/fresh lime soda/, "https://www.prabhatkhabar.com/_next/image?q=75&url=https%3A%2F%2Fwpmedia.prabhatkhabar.com%2Fuploads%2F2025%2F10%2Ffresh-lime-sodaa.jpg&w=3840"],
+  [/masala lemon soda/, "https://catalogue.bikanervala.com/cdn/shop/files/MocktailMasalaLemonade.jpg?v=1776840835&width=1020"],
   [/chocolate croissant/, "https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1200&q=95"],
   [/classic butter croissant/, "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=95"],
   [/almond croissant/, "https://images.unsplash.com/photo-1608198093002-ad4e005484b8?auto=format&fit=crop&w=1200&q=95"],
