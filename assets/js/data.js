@@ -662,6 +662,27 @@ window.COZY_MENU = [
     "featured": false,
     "vegetarian": true
   }
+,
+ {
+    "id": "cozy-61",
+    "name": "Classic Butter Croissant",
+    "category": "Desserts",
+    "price": 249,
+    "description": "Golden, buttery croissant with crisp, delicate layers.",
+    "image": "https://static.750g.com/images/1200-675/b21ceda10e0018214b11664ac5978ca1/croissant.jpeg",
+    "featured": false,
+    "vegetarian": true
+  },
+ {
+    "id": "cozy-62",
+    "name": "Almond Croissant",
+    "category": "Desserts",
+    "price": 329,
+    "description": "Flaky croissant topped with toasted almond flakes and a light sugar dusting.",
+    "image": "https://b.zmtcdn.com/data/pictures/chains/3/21852523/03aa1b0821d2959f18cca27d9b9d0001.jpg?crop=960%3A500%3B%2A%2C%2A&fit=around%7C960%7C500",
+    "featured": false,
+    "vegetarian": true
+  }
 ];
 window.COZY_COMBOS = [
   {
@@ -695,26 +716,6 @@ window.COZY_COMBOS = [
     "tag": "BAKERY FAVOURITE",
     "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=90",
     "description": "Buttery pastry and freshly brewed coffee, made to pair."
-  },
-  {
-    "id": "cozy-61",
-    "name": "Classic Butter Croissant",
-    "category": "Desserts",
-    "price": 249,
-    "description": "Golden, buttery croissant with crisp, delicate layers.",
-    "image": "https://static.750g.com/images/1200-675/b21ceda10e0018214b11664ac5978ca1/croissant.jpeg",
-    "featured": false,
-    "vegetarian": true
-  },
-  {
-    "id": "cozy-62",
-    "name": "Almond Croissant",
-    "category": "Desserts",
-    "price": 329,
-    "description": "Flaky croissant topped with toasted almond flakes and a light sugar dusting.",
-    "image": "https://b.zmtcdn.com/data/pictures/chains/3/21852523/03aa1b0821d2959f18cca27d9b9d0001.jpg?crop=960%3A500%3B%2A%2C%2A&fit=around%7C960%7C500",
-    "featured": false,
-    "vegetarian": true
   }
 
 ];
