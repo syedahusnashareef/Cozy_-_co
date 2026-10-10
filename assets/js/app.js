@@ -16,77 +16,59 @@ const year=$("#current-year");if(year)year.textContent=new Date().getFullYear();
 /* Dish-safe image fallback: never replace a failed food photo with coffee. */
 document.addEventListener("error",function(e){
  const img=e.target;
- if(!img||img.tagName!=="IMG"||img.dataset.fallbackUsed)return;
- const isFood=img.classList.contains("food-card__image");
- const isCategory=img.closest(".menu-category-card")||img.closest(".category-card");
- if(!isFood&&!isCategory)return;
- img.dataset.fallbackUsed="true";
- const alt=(img.alt||"").toLowerCase();
- const card=img.closest(".food-card");
- const category=(card?.dataset.category||"").toLowerCase();
- const catCard=img.closest(".menu-category-card,.category-card");
- const catName=(catCard?.querySelector("h3")?.textContent||"").toLowerCase();
- const byName=[
-  [/crispy chicken burger/, "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=95"],
-  [/bombay masala sandwich/, "https://images.squarespace-cdn.com/content/v1/62df38bd768870226dced4a0/1718145969633-LXZIU4GNTGZCG3CZM1GV/bombay%2Binspired%2Bsandwich.jpg"],
-  [/classic veg sandwich/, "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1200&q=95"],
-  [/paneer tikka sandwich/, "https://b.zmtcdn.com/data/pictures/6/19664986/1844b8c01d5169cdbf0f208fb534fa37.jpg?crop=960%3A500%3B%2A%2C%2A&fit=around%7C960%3A500"],
-  [/corn & cheese melt/, "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/9/1/4a20aa78-c745-4b0d-a2b7-55ac212f00e9_727eca28-9cbb-4f9e-92b8-97ae66ad59948.jpg"],
-  [/crispy chicken sandwich/, "https://commons.wikimedia.org/wiki/Special:FilePath/Grilled%20Chicken%20Sandwich.jpg"],
-  [/cheesy grilled sandwich/, "https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=1200&q=95"],
-  [/watermelon mint cooler/, "https://www.coolinarco.com/wp-content/uploads/2023/09/ds0887_Watermelon_Mint_Cooler_59df4cc9-554f-4190-888d-734535495916.jpg"],
-  [/mango cream shake/, "https://imgmediagumlet.lbb.in/media/2019/05/5cdcb72d6ac075021983804f_1557968685531.jpg"],
-  [/oreo cookies & cream shake/, "https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/irresistible-cookie-cream-milkshake-delight-eT_79tef8fIBk8nH9wer8.webp"],
-  [/banana milkshake/, "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1200&q=95"],
-  [/fresh lime soda/, "https://www.prabhatkhabar.com/_next/image?q=75&url=https%3A%2F%2Fwpmedia.prabhatkhabar.com%2Fuploads%2F2025%2F10%2Ffresh-lime-sodaa.jpg&w=3840"],
-  [/masala lemon soda/, "https://catalogue.bikanervala.com/cdn/shop/files/MocktailMasalaLemonade.jpg?v=1776840835&width=1020"],
-  [/chocolate croissant/, "https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=1200&q=95"],
-  [/classic butter croissant/, "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=95"],
-  [/almond croissant/, "https://images.unsplash.com/photo-1608198093002-ad4e005484b8?auto=format&fit=crop&w=1200&q=95"],
-  [/chicken tikka pizza/, "https://product-assets.faasos.io/production/product/image_1658347848254_Chicken_Tikka_Cheese_Burst_Pizza.jpg"],
-  [/chicken 65 pizza/, "https://cdn.uengage.io/uploads/5/image-965669-1760076017.jpeg"],
-  [/achari chicken pizza/, "https://d1w7312wesee68.cloudfront.net/HNJbBgyD8TwP2aEy8OO_t1jxR1b5W_cB8eSeKO5FYmk/resize%3Afit%3A720%3A720/plain/s3%3A/toasttab/menu_service/restaurants/52daeab1-324c-4561-b1b4-991ba656b62e/MenuItem/c6452f7c-4625-4ac6-b664-205a7b02aa28.jpg"],
-  [/chocolate overload waffle/, "https://b.zmtcdn.com/data/dish_photos/368/b18cd42c17e73c39e1faeedbbcff4368.jpeg"],
-  [/crispy chicken sandwich/, "https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=1200&q=95"],
-  [/grilled bombay masala sandwich/, "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=95"],
-  [/classic veg sandwich/, "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1200&q=95"],
-  [/paneer tikka sandwich/, "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=1200&q=95"],
-  [/corn & cheese melt/, "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=1200&q=95"],
-  [/cheesy grilled sandwich/, "https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=1200&q=95"],
-  [/watermelon mint cooler/, "https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=1200&q=95"],
-  [/mango cream shake/, "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1200&q=95"],
-  [/banana milkshake/, "https://b.zmtcdn.com/data/pictures/chains/9/19342739/2c6721efa0e07d3ccfae61b42d47d120.jpg"],
-  [/vanilla bean milkshake/, "https://images.unsplash.com/photo-1542990253-0b8be9e1e2c6?auto=format&fit=crop&w=1200&q=95"],
-  [/fresh strawberry cream shake/, "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1200&q=95"],
-  [/blue lagoon mocktail/, "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600/a5h6jkaylcegymerre5n"],
-  [/fresh lime soda/, "https://i0.wp.com/mayuris-jikoni.com/wp-content/uploads/2012/07/nimbu-pani-8.jpg?resize=900%2C1200&ssl=1"],
-  [/masala lemon soda/, "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1200&q=95"],
-  [/pani puri|golgappa/, "https://media-assets.swiggy.com/swiggy/image/upload/f_auto%2Cq_auto%2Cfl_lossy/4d5ad16a55516140bfc63d51a3e9dabc"],
-  [/oreo/, "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=1000&q=90"],
-  [/strawberry/, "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1000&q=90"],
-  [/biscoff/, "https://www.amummytoo.co.uk/wp-content/uploads/2023/11/biscoff-waffles-SQUARE.jpg"],
-  [/croissant/, "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=90"],
-  [/pani puri|golgappa/, "https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1000"],
-  [/dahi puri/, "https://images.pexels.com/photos/32894826/pexels-photo-32894826.jpeg?auto=compress&cs=tinysrgb&w=1000"],
-  [/pav bhaji/, "https://media-assets.swiggy.com/swiggy/image/upload/f_auto%2Cq_auto%2Cfl_lossy/e446fc1fe985d616b15a250c90f4b994"],
-  [/tikki chaat/, "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/10/2/1246ab31-ef18-4751-a96b-7368a4cf5c97_77b88453-637b-44b7-a74f-2aa29bbf29cc.jpg"],
-  [/red velvet/, "https://assets.tastemadecdn.net/images/fadd09/a0c23b492abf0b9d84fc/c0c520.jpg"],
-  [/mango/, "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=90"],
-  [/pizza/, "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=90"],
-  [/burger/, "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=90"],
-  [/waffle/, "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1000&q=90"],
-  [/fries/, "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=90"],
-  [/sandwich/, "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=90"],
-  [/pasta/, "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=90"],
-  [/shake|milkshake|mojito|mocktail|soda|beverage/, "https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=90"]
- ];
- let replacement=(byName.find(([re])=>re.test(alt))||[])[1];
- if(!replacement){
-  const key=catName||category;
-  const map={"coffee":"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=90","french fries":"https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=90","burgers":"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=90","pizza":"https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=90","waffles":"https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1000&q=90","desserts":"https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1000&q=90","sandwiches":"https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1000&q=90","pasta":"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1000&q=90","beverages":"https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1000&q=90","chaat":"https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1000"};
-  replacement=map[key]||map[category]||map["desserts"];
+ if(!img||img.tagName!=="IMG")return;
+ const isMenu=img.classList.contains("food-card__image");
+ const isCategory=!!img.closest(".menu-category-card,.category-card");
+ const isCombo=!!img.closest(".combo-card__image");
+ const isHero=!!img.closest(".page-hero__image,.hero-photo-frame,.combo-banner__image,.student-feature__image");
+ const isCart=!!img.closest(".cart-item");
+ if(!isMenu&&!isCategory&&!isCombo&&!isHero&&!isCart)return;
+ const card=img.closest(".food-card,.combo-card");
+ const name=(img.alt||card?.querySelector("h3")?.textContent||"").trim().toLowerCase();
+ const cat=(card?.dataset.category||img.closest(".menu-category-card,.category-card")?.querySelector("h3")?.textContent||"").trim().toLowerCase();
+ const sources={
+  "crispy chicken burger":["https://images.deliveryhero.io/image/fd-pk/Products/97876981.jpg?width=1200","https://images.pexels.com/photos/7963093/pexels-photo-7963093.jpeg?auto=compress&cs=tinysrgb&w=1200"],
+  "crispy chicken sandwich":["https://images.pexels.com/photos/36879213/pexels-photo-36879213.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=1200&q=92"],
+  "cheesy grilled sandwich":["https://assets.lummi.ai/assets/Qmc6TmFo8K83WQH5oFCd7MNiKYiwADCtVzvThAFttm8k2L","https://commons.wikimedia.org/wiki/Special:FilePath/Cheesy%20Sandwich.jpg"],
+  "classic veg sandwich":["https://commons.wikimedia.org/wiki/Special:FilePath/VegeeSandwich.jpg","https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=1200&q=92"],
+  "corn & cheese melt":["https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/9/1/4a20aa78-c745-4b0d-a2b7-55ac212f00e9_727eca28-9cbb-4f2f-8914-365d96a59948.jpg","https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=1200&q=92"],
+  "kitkat chocolate shake":["https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_600%2Ch_468/DINEOUT_ALL_RESTAURANTS/IMAGES/RESTAURANT_IMAGE_SERVICE/2026/3/20/6e561911-ff3d-4005-85f2-6388df5c6c49_Manch26154FOODSHOTS298174e20ae99437a91d1ab49f20cdaae.JPG","https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1200&q=92"],
+  "oreo cookies & cream shake":["https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/irresistible-cookie-cream-milkshake-delight-eT_79tef8fIBk8nH9wer8.webp","https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=1200&q=92"],
+  "banana milkshake":["https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_300%2Ch_300%2Cc_fit/FOOD_CATALOG/IMAGES/CMS/2025/2/9/4bf5e3fa-678c-49dd-b73d-404208ed4ade_35753430-8583-4af9-abed-cc6c1edd846c.jpg","https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=1200&q=92"],
+  "mango cream shake":["https://imgmediagumlet.lbb.in/media/2019/05/5cdcb72d6ac075021983804f_1557968685531.jpg","https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1200&q=92"],
+  "watermelon mint cooler":["https://www.coolinarco.com/wp-content/uploads/2023/09/ds0887_Watermelon_Mint_Cooler_59df4cc9-554f-4190-888d-734535495916.jpg","https://images.unsplash.com/photo-1525385133512-2f3bdd039054?auto=format&fit=crop&w=1200&q=92"],
+  "fresh lime soda":["https://www.prabhatkhabar.com/_next/image?q=75&url=https%3A%2F%2Fwpmedia.prabhatkhabar.com%2Fuploads%2F2025%2F10%2Ffresh-lime-sodaa.jpg&w=3840","https://i0.wp.com/mayuris-jikoni.com/wp-content/uploads/2012/07/nimbu-pani-8.jpg?resize=900%2C1200&ssl=1"],
+  "masala lemon soda":["https://catalogue.bikanervala.com/cdn/shop/files/MocktailMasalaLemonade.jpg?v=1776840835&width=1020","https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1200&q=92"],
+  "cozy burger box":["https://images.deliveryhero.io/image/fd-pk/Products/86844074.jpg?width=1200"],
+  "pizza night for two":["https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=92"],
+  "waffle & coffee date":["https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1200&q=92"],
+  "croissant coffee pair":["https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=92"]
+ };
+ const key=Object.keys(sources).find(k=>name.includes(k));
+ const categorySources={
+  "coffee":["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1200&q=92"],
+  "french fries":["https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=1200&q=92"],
+  "burgers":["https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=1200&q=92"],
+  "pizza":["https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=92"],
+  "waffles":["https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=1200&q=92","https://www.amummytoo.co.uk/wp-content/uploads/2023/11/biscoff-waffles-SQUARE.jpg"],
+  "desserts":["https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=92"],
+  "sandwiches":["https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=1200&q=92","https://commons.wikimedia.org/wiki/Special:FilePath/VegeeSandwich.jpg"],
+  "pasta":["https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=92","https://cdn.shopify.com/s/files/1/0638/6460/2881/files/paneer_pasta_600x600.png?v=1706872917"],
+  "beverages":["https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1536935338788846bb9981813?auto=format&fit=crop&w=1200&q=92"],
+  "chaat":["https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/32894826/pexels-photo-32894826.jpeg?auto=compress&cs=tinysrgb&w=1200"]
+ };
+ let choices=key?sources[key]:(isCombo?["https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=92","https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=92"]:categorySources[cat]||[]);
+ const index=Number(img.dataset.fallbackIndex||0);
+ if(index<choices.length){
+  img.dataset.fallbackIndex=String(index+1);
+  img.src=choices[index];
+  return;
  }
- img.src=replacement;
+ if(!img.dataset.placeholderUsed){
+  img.dataset.placeholderUsed="true";
+  const label=(img.alt||"Cozy & Co.").replace(/[<>&"]/g,"");
+  img.src="data:image/svg+xml;charset=UTF-8,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7ead6"/><stop offset="1" stop-color="#d6b58d"/></linearGradient></defs><rect width="900" height="650" fill="url(#g)"/><circle cx="450" cy="255" r="112" fill="#fff8ec" opacity=".75"/><path d="M395 210h110v105a55 55 0 0 1-110 0z" fill="#8c5b37"/><path d="M505 230h26a34 34 0 0 1 0 68h-26" fill="none" stroke="#8c5b37" stroke-width="15"/><text x="450" y="445" text-anchor="middle" font-family="Georgia,serif" font-size="32" fill="#432a1b">Cozy &amp; Co.</text><text x="450" y="495" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#684b34">'+label+'</text></svg>');
+ }
 },true);
 
 })();
