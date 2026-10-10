@@ -658,7 +658,7 @@ window.COZY_MENU = [
     "category": "Chaat",
     "price": 279,
     "description": "Golden potato tikki with tangy chutneys, yogurt and Indian spices.",
-    "image": "https://images.pexels.com/photos/1601050690597-df0568f70950/pexels-photo-1601050690597-df0568f70950.jpeg?auto=compress&cs=tinysrgb&w=1000",
+    "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=88",
     "featured": false,
     "vegetarian": true
   }
