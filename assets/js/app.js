@@ -12,4 +12,24 @@ function setReviewRating(value){const field=$("#review-rating");if(field)field.v
 starButtons.forEach(b=>{b.addEventListener("click",()=>setReviewRating(Number(b.dataset.ratingValue)));b.addEventListener("mouseenter",()=>starButtons.forEach(s=>s.classList.toggle("is-hovered",Number(s.dataset.ratingValue)<=Number(b.dataset.ratingValue))));b.addEventListener("mouseleave",()=>starButtons.forEach(s=>s.classList.remove("is-hovered")))});
 if(reviewForm){reviewForm.addEventListener("submit",e=>{e.preventDefault();const data=new FormData(reviewForm),name=String(data.get("displayName")||"").trim(),rating=Number(data.get("rating")||0),textValue=String(data.get("review")||"").trim(),result=$("#review-result");if(!rating){if(result){result.hidden=false;result.textContent="Please tap a star to choose your rating.";result.classList.add("is-error")}return}if(!name||textValue.length<8){if(result){result.hidden=false;result.textContent="Please add your name and a little more detail about your experience.";result.classList.add("is-error")}return}let reviews=[];try{reviews=JSON.parse(localStorage.getItem("cozy-review-previews")||"[]")}catch(err){}reviews.unshift({name,rating,text:textValue,date:new Date().toISOString()});localStorage.setItem("cozy-review-previews",JSON.stringify(reviews.slice(0,20)));renderReviewPreviews();reviewForm.reset();setReviewRating(0);if(result){result.hidden=false;result.classList.remove("is-error");result.textContent="Thank you! Your review preview is saved on this device only. It has not been sent to the café or published publicly."}$("#review-preview-list")?.scrollIntoView({behavior:"smooth",block:"nearest"});});setReviewRating(0);renderReviewPreviews()}
 $("#contact-form")?.addEventListener("submit",e=>{e.preventDefault();const result=$("#contact-form-result");if(result){result.hidden=false;result.textContent="Your message preview is ready, but this demo form is not connected to an inbox, so nothing has been sent."}});
-const year=$("#current-year");if(year)year.textContent=new Date().getFullYear();renderCategories();renderMenuCategories();renderFeatured();renderMenu();renderCombos();renderCart();})();
+const year=$("#current-year");if(year)year.textContent=new Date().getFullYear();renderCategories();renderMenuCategories();renderFeatured();renderMenu();renderCombos();renderCart();
+/* If a remote food photo fails, retry with a dish-matched image rather than leaving a blank card. */
+document.addEventListener("error",function(e){
+ const img=e.target;
+ if(!img||img.tagName!=="IMG"||!img.classList.contains("food-card__image")||img.dataset.fallbackUsed)return;
+ img.dataset.fallbackUsed="true";
+ const name=(img.alt||"").toLowerCase();
+ const fallback=name.includes("dahi puri")?"https://images.pexels.com/photos/32894826/pexels-photo-32894826.jpeg?auto=compress&cs=tinysrgb&w=1000":
+ name.includes("pav bhaji")?"https://media-assets.swiggy.com/swiggy/image/upload/f_auto%2Cq_auto%2Cfl_lossy/e446fc1fe985d616b15a250c90f4b994":
+ name.includes("tikki chaat")?"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2024/10/2/1246ab31-ef18-4751-a96b-7368a4cf5c97_77b88453-637b-44b7-a74f-2aa29bbf29cc.jpg":
+ name.includes("oreo")?"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/2/13/3748a8c9-f535-4512-add5-1fa92d475ff7_2ad6ac61-9ed9-4e9f-92b8-97ae66ad25fe.jpg":
+ name.includes("strawberry cream waffle")?"https://popmenucloud.com/btudxlpn/092d7820-6433-4f80-995b-23416346a263.jpg":
+ name.includes("biscoff")?"https://www.amummytoo.co.uk/wp-content/uploads/2023/11/biscoff-waffles-SQUARE.jpg":
+ name.includes("brownie fudge waffle")?"https://images.deliveryhero.io/image/fd-pk/products/89681109.jpg?width=1000":
+ name.includes("red velvet")?"https://assets.tastemadecdn.net/images/fadd09/a0c23b492abf0b9d84fc/c0c520.jpg":
+ name.includes("mac & cheese")?"https://assets.unileversolutions.com/recipes-v2/264006.png":
+ "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=88";
+ img.src=fallback;
+},true);
+
+})();
