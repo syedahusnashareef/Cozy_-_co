@@ -103,3 +103,10 @@
 @media(max-width:760px){.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.category-card img{height:155px}.food-grid--menu,.food-grid--featured{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.food-card__image{height:clamp(135px,38vw,210px)}.food-card__body{padding:14px}.food-card__body p{font-size:12px;min-height:0}.food-card__price{font-size:16px}.combo-grid{grid-template-columns:1fr;gap:18px}.combo-card__image{height:230px}.combo-card__body{padding:19px}.combo-card__bottom{align-items:flex-start;flex-direction:column}.review-submit-section{grid-template-columns:1fr;gap:25px}.review-prompt{position:static}.review-form-card{padding:23px 18px}.home-film-section{grid-template-columns:1fr;gap:32px}.home-film-frame{width:calc(100% - 8px);margin:0 8px 8px 0;aspect-ratio:4/3}.film-caption{left:10px;right:10px;bottom:10px;padding:10px;font-size:9px}.film-caption-note{display:none}.film-float-mark{width:47px;height:47px;right:-10px;top:-14px}}
 @media(max-width:420px){.food-grid--menu,.food-grid--featured{grid-template-columns:1fr}.food-card__image{height:230px}.category-card img{height:135px}.star-rating{gap:6px}.star-rating button{width:40px;height:40px}}
 @media(prefers-reduced-motion:reduce){.film-glow,.film-float-mark,.home-film-frame:before{animation:none!important}.category-card,.food-card__image img,.star-rating button{transition:none!important}}
+
+/* Keep the complete food subject visible inside menu cards */
+.food-card__image{background:#f2e7d8;padding:8px}
+.food-card__image img{object-fit:contain;object-position:center;border-radius:10px}
+.combo-card__image{background:#f2e7d8;padding:8px}
+.combo-card__image img{object-fit:contain;border-radius:14px}
+@media(max-width:760px){.food-card__image{padding:6px}.combo-card__image{padding:6px}}
