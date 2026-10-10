@@ -57,7 +57,7 @@ const categories = [
     "name": "Chaat",
     "category": "Chaat",
     "note": "Indian street-food favourites, served café-style",
-    "image": "https://images.unsplash.com/photo-1753357303396-704b5abe8945?auto=format&fit=crop&w=1400&q=90"
+    "image": "https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1000"
   }
 ];
 window.COZY_CATEGORIES = categories;
@@ -618,7 +618,7 @@ window.COZY_MENU = [
     "category": "Chaat",
     "price": 299,
     "description": "Buttery pav served with richly spiced mashed vegetables and fresh lemon.",
-    "image": "https://images.unsplash.com/photo-1753357303396-704b5abe8945?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.pexels.com/photos/34507155/pexels-photo-34507155.jpeg?auto=compress&cs=tinysrgb&w=1000",
     "featured": false,
     "vegetarian": true
   },
@@ -628,7 +628,7 @@ window.COZY_MENU = [
     "category": "Chaat",
     "price": 349,
     "description": "Mumbai-style bhaji topped with a generous layer of melted cheese.",
-    "image": "https://images.unsplash.com/photo-1619193099598-6856ec4e2a87?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&cs=tinysrgb&w=1000",
     "featured": false,
     "vegetarian": true
   },
@@ -638,7 +638,7 @@ window.COZY_MENU = [
     "category": "Chaat",
     "price": 399,
     "description": "A rich, extra-cheesy pav bhaji finished with butter and coriander.",
-    "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.pexels.com/photos/12365247/pexels-photo-12365247.jpeg?auto=compress&cs=tinysrgb&w=1000",
     "featured": false,
     "vegetarian": true
   },
@@ -648,7 +648,7 @@ window.COZY_MENU = [
     "category": "Chaat",
     "price": 249,
     "description": "Crispy papdi topped with potato, yogurt, chutneys and crunchy sev.",
-    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.pexels.com/photos/34270742/pexels-photo-34270742.jpeg?auto=compress&cs=tinysrgb&w=1000",
     "featured": false,
     "vegetarian": true
   },
@@ -658,7 +658,7 @@ window.COZY_MENU = [
     "category": "Chaat",
     "price": 279,
     "description": "Golden potato tikki with tangy chutneys, yogurt and Indian spices.",
-    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97b46?auto=format&fit=crop&w=1000&q=88",
+    "image": "https://images.pexels.com/photos/29699504/pexels-photo-29699504.jpeg?auto=compress&cs=tinysrgb&w=1000",
     "featured": false,
     "vegetarian": true
   }
