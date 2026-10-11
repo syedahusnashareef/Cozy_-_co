@@ -138,7 +138,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 249,
     "description": "Crispy fries tossed in a bold peri-peri spice blend.",
-    "image": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=1200&q=92",
+    "image": "https://bakersway.in/cdn/shop/files/Peri-PeriFries_Shopify.png?v=1767891617&width=1946",
     "featured": true,
     "vegetarian": true
   },
@@ -148,7 +148,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 269,
     "description": "Crispy fries tossed with a visible red-orange tandoori masala seasoning.",
-    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=1200&q=92",
+    "image": "https://zaykedar.com/cdn/shop/files/with-tandoori-mayoneese.png?v=1760873315",
     "featured": false,
     "vegetarian": true
   },
@@ -158,7 +158,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 329,
     "description": "Hot fries layered with a creamy cheese sauce.",
-    "image": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1200&q=92",
+    "image": "https://www.burgerchachu.ca/assets/fries-DbxnFHT8.jpg",
     "featured": false,
     "vegetarian": true
   },
@@ -168,7 +168,7 @@ window.COZY_MENU = [
     "category": "French Fries",
     "price": 349,
     "description": "Golden fries loaded with chilli, jalapeño-style peppers and melted cheese sauce.",
-    "image": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=1200&q=92",
+    "image": "https://images.deliveryhero.io/image/talabat/MenuItems/BF88DA23EAB20ADE8B33ABE1EED6370C",
     "featured": false,
     "vegetarian": true
   },
