@@ -1,1 +1,55 @@
-(()=>{const $=s=>document.querySelector(s),email=window.COZY_ADMIN_EMAIL,c=window.supabase.createClient(window.COZY_SUPABASE_URL,window.COZY_SUPABASE_KEY),auth=$('#auth-panel'),studio=$('#studio-panel'),as=$('#auth-status'),ss=$('#studio-status');$('#email').value=email;const say=(el,s)=>el.textContent=s;async function show(session){if(!session){auth.classList.remove('hidden');studio.classList.add('hidden');return}if((session.user?.email||'').toLowerCase()!==email.toLowerCase()){await c.auth.signOut();say(as,'Access denied: this is not the authorized owner account.');return}auth.classList.add('hidden');studio.classList.remove('hidden');await current()}async function current(){const {data,error}=await c.from('site_settings').select('value').eq('key','hero_video_path').maybeSingle();if(error){say(ss,error.message);return}if(data?.value){const {data:u}=c.storage.from('hero-media').getPublicUrl(data.value);$('#preview').src=u.publicUrl;$('#current-label').textContent='Published: '+data.value}else{$('#preview').removeAttribute('src');$('#preview').load();$('#current-label').textContent='No custom video published yet.'}}$('#login').onclick=async()=>{const password=$('#password').value;if(!password){say(as,'Enter your password.');return}$('#login').disabled=true;say(as,'Signing in…');const {data,error}=await c.auth.signInWithPassword({email,password});$('#login').disabled=false;if(error)say(as,error.message);else await show(data.session)};$('#create-account').onclick=async()=>{const password=$('#password').value;if(password.length<8){say(as,'Enter a password with at least 8 characters. The password is not stored in website code.');return}$('#create-account').disabled=true;say(as,'Creating owner account…');const {data,error}=await c.auth.signUp({email,password,options:{emailRedirectTo:location.origin+location.pathname}});$('#create-account').disabled=false;if(error)say(as,error.message);else if(data.session)await show(data.session);else say(as,'Account request created. Check '+email+' for a verification email, verify it, then return and sign in.')} ;$('#logout').onclick=async()=>{await c.auth.signOut();await show(null);say(as,'Signed out.')};$('#video-file').onchange=()=>{const f=$('#video-file').files?.[0];if(!f)return;if(!f.type.startsWith('video/')){say(ss,'Choose a video file.');return}if(f.size>150*1024*1024){say(ss,'File is over 150 MB. Compress it and try again.');$('#video-file').value='';return}$('#preview').src=URL.createObjectURL(f);say(ss,f.name+' · '+(f.size/1048576).toFixed(1)+' MB selected.')};$('#upload').onclick=async()=>{const f=$('#video-file').files?.[0];if(!f){say(ss,'Choose a video from your gallery first.');return}const {data:{session}}=await c.auth.getSession();if(!session||(session.user.email||'').toLowerCase()!==email.toLowerCase()){say(ss,'Owner session expired. Sign in again.');await show(null);return}$('#upload').disabled=true;say(ss,'Uploading… keep this page open.');const ext=(f.name.split('.').pop()||'mp4').toLowerCase().replace(/[^a-z0-9]/g,''),path='hero-'+Date.now()+'.'+ext;const {error:up}=await c.storage.from('hero-media').upload(path,f,{contentType:f.type||'video/mp4',upsert:false,cacheControl:'3600'});if(up){$('#upload').disabled=false;say(ss,'Upload failed: '+up.message);return}const {error:save}=await c.from('site_settings').upsert({key:'hero_video_path',value:path,updated_at:new Date().toISOString()},{onConflict:'key'});$('#upload').disabled=false;if(save){say(ss,'Video uploaded but publish failed: '+save.message);return}$('#video-file').value='';say(ss,'Published! Refresh the public website to see the new hero video.');await current()};$('#remove').onclick=async()=>{if(!confirm('Remove the custom video from the public homepage?'))return;const {error}=await c.from('site_settings').upsert({key:'hero_video_path',value:'',updated_at:new Date().toISOString()},{onConflict:'key'});if(error)say(ss,error.message);else{say(ss,'Custom video removed. The café photo fallback will show.');await current()}};c.auth.getSession().then(({data})=>show(data.session));c.auth.onAuthStateChange((_e,s)=>{if(!s){auth.classList.remove('hidden');studio.classList.add('hidden')}})})();
+(()=> {
+const $=s=>document.querySelector(s);
+const url=window.COZY_SUPABASE_URL;
+const key=window.COZY_SUPABASE_KEY;
+const c=window.supabase.createClient(url,key);
+const endpoint=url+"/functions/v1/cozy-hero-admin";
+const auth=$("#auth-panel"),studio=$("#studio-panel"),as=$("#auth-status"),ss=$("#studio-status");
+let password="";
+const say=(el,s)=>el.textContent=s;
+async function current(){
+ const {data,error}=await c.from("site_settings").select("value").eq("key","hero_video_path").maybeSingle();
+ if(error){say(ss,"Could not load current video: "+error.message);return}
+ if(data?.value){const {data:u}=c.storage.from("hero-media").getPublicUrl(data.value);$("#preview").src=u.publicUrl;$("#current-label").textContent="Published: "+data.value}
+ else{$("#preview").removeAttribute("src");$("#preview").load();$("#current-label").textContent="No custom video published yet."}
+}
+function openStudio(){auth.classList.add("hidden");studio.classList.remove("hidden");current()}
+$("#login").onclick=async()=>{
+ const p=$("#password").value;
+ if(!p){say(as,"Enter your password first.");return}
+ $("#login").disabled=true;say(as,"Checking password…");
+ try{
+  const form=new FormData();form.append("action","check");
+  const r=await fetch(endpoint,{method:"POST",headers:{"x-cozy-password":p},body:form});
+  const d=await r.json();
+  if(!r.ok)throw new Error(d.error||"Access denied.");
+  password=p;openStudio();say(ss,"Welcome back. Choose a video to publish.");
+ }catch(e){say(as,e.message||"Could not open panel. Try again.");}
+ finally{$("#login").disabled=false}
+};
+$("#password").addEventListener("keydown",e=>{if(e.key==="Enter")$("#login").click()});
+$("#logout").onclick=()=>{password="";$("#password").value="";studio.classList.add("hidden");auth.classList.remove("hidden");say(as,"You are signed out.")};
+$("#video-file").onchange=()=>{
+ const f=$("#video-file").files?.[0];if(!f)return;
+ if(!f.type.startsWith("video/")){say(ss,"Choose a video file.");return}
+ if(f.size>150*1024*1024){say(ss,"File is over 150 MB. Compress it and try again.");$("#video-file").value="";return}
+ $("#preview").src=URL.createObjectURL(f);say(ss,f.name+" · "+(f.size/1048576).toFixed(1)+" MB selected.")
+};
+$("#upload").onclick=async()=>{
+ const f=$("#video-file").files?.[0];if(!f){say(ss,"Choose a video from your gallery first.");return}
+ $("#upload").disabled=true;say(ss,"Uploading and publishing… keep this page open.");
+ try{
+  const form=new FormData();form.append("action","publish");form.append("video",f);
+  const r=await fetch(endpoint,{method:"POST",headers:{"x-cozy-password":password},body:form});
+  const d=await r.json();if(!r.ok)throw new Error(d.error||"Upload failed.");
+  $("#video-file").value="";say(ss,"Published! Refresh the public website to see your new hero video.");await current();
+ }catch(e){say(ss,e.message||"Upload failed. Try again.");}
+ finally{$("#upload").disabled=false}
+};
+$("#remove").onclick=async()=>{
+ if(!confirm("Remove the custom video from the public homepage?"))return;
+ const form=new FormData();form.append("action","remove");
+ try{const r=await fetch(endpoint,{method:"POST",headers:{"x-cozy-password":password},body:form});const d=await r.json();if(!r.ok)throw new Error(d.error||"Could not remove video.");say(ss,"Custom video removed. The café photo fallback will show.");await current()}
+ catch(e){say(ss,e.message||"Could not remove video.")}
+};
+})();
